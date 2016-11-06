@@ -1,5 +1,5 @@
 # Mamute
-The image is based on the [**java:8-jdk**][java-container-url] base image, fetches [**Mamute**][mamute-url] version 1.4.0, extracts and places a startup script file that does all the magic.
+The image is based on the [**java:8-jdk**][java-container-url] base image, fetches [**Mamute**][mamute-url] version 1.5.0, extracts and places a startup script file that does all the magic.
 
 ## Purpose of container
 Provide an easy way to deploy **Mamute** in production with very easy configuration options.
@@ -7,7 +7,7 @@ Provide an easy way to deploy **Mamute** in production with very easy configurat
 
 > **Attention!**
 >
-> **MySQL** version 5.7.4 works well with **Mamute** 1.4.0 any version above 5.7.4 will fail and break and cause the polar ice caps to melt
+> **MySQL** version 5.7.4 works well with **Mamute** 1.5.0 any version above 5.7.4 will fail and break and cause the polar ice caps to melt
 
 ## Eager to try it?
 Start a **MySQL** container:
@@ -28,7 +28,7 @@ docker run -d \
     --link mysql-mamute:mysql \
     -e MAMUTE_PORT=8080 \
     -p 8080:8080 \
-    jbasila/mamute:1.4.0
+    jbasila/mamute:1.5.0
 ```
 .
 This is enough to test **Mamute** on localhost on port 8080. Navigate to http://localhost:8080.
